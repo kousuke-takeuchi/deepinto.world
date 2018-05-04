@@ -1,0 +1,38 @@
+{
+  "name": "takeuchi-host-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "create:develop": "$(npm bin)/sls deploy-appsync -s develop",
+    "create:master": "$(npm bin)/sls deploy-appsync -s master",
+    "deploy:develop": "$(npm bin)/sls deploy -s develop",
+    "deploy:master": "$(npm bin)/sls deploy -s master",
+    "update:develop": "$(npm bin)/sls update-appsync -s develop",
+    "update:master": "$(npm bin)/sls update-appsync -s master"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.231.1",
+    "babel-polyfill": "^6.26.0",
+    "bluebird": "^3.5.1",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-stage-2": "^6.24.1",
+    "body-parser": "^1.15.2",
+    "cors": "2.8.4",
+    "env-cmd": "^5.0.0",
+    "imports-loader": "^0.7.1",
+    "jest": "^21.2.1",
+    "serverless": "^1.27.0",
+    "serverless-appsync-plugin": "^0.0.5",
+    "serverless-webpack": "^4.1.0",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.6.0"
+  }
+}

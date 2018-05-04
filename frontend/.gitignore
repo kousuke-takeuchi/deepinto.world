@@ -1,0 +1,6 @@
+node_modules
+yarn.lock
+public/*
+!public/index.html
+env/*
+!env/*.sample.json

@@ -1,0 +1,13 @@
+type Query {
+	getPosts(page: Int): [Post]!
+}
+
+type Post {
+  title: String!
+  url: String!
+  published_at: Int!
+}
+
+schema {
+  query: Query
+}
