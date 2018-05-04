@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 
+
 const env = process.env.NODE_ENV || 'develop';
 const dev = !(env === 'production');
 
@@ -24,9 +25,14 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/env', '@babel/react']
+            presets: ['@babel/env', '@babel/react'],
+
           }
         }
+      },
+      {
+        test: /\.styl$/,
+        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!stylus-loader'
       }
     ]
   },
