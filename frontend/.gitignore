@@ -1,6 +1,6 @@
 node_modules
 yarn.lock
-public/*
-!public/index.html
+dist/*
 env/*
 !env/*.sample.json
+config.json

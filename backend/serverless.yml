@@ -10,10 +10,7 @@ provider:
   stage:
     - develop
     - master
-
-# you can define service wide environment variables here
-#  environment:
-#    variable1: value1
+  deploymentBucket: serverless-deploy
 
 functions:
   graphqlHandler:
@@ -21,7 +18,7 @@ functions:
 
 custom:
   appSync:
-    name:  api.takeuchi.host
+    name: takeuchi.host-${opt:stage}
     authenticationType: API_KEY
     userPoolConfig:
       awsRegion: ap-northeast-1
@@ -36,7 +33,7 @@ custom:
         request: "getPosts-request-mapping-template.txt"
         response: "getPosts-response-mapping-template.txt"
     schema: schema.graphql
-    serviceRole: "takeuchi-host-AppSyncServiceRole"
+    serviceRole: "takeuchi-host-${opt:stage}-AppSyncServiceRole"
     dataSources:
       - type: AWS_LAMBDA
         name: Lambda
@@ -51,7 +48,7 @@ resources:
     AppSyncServiceRole:
       Type: "AWS::IAM::Role"
       Properties:
-        RoleName: "takeuchi-host-AppSyncServiceRole"
+        RoleName: "takeuchi-host-${opt:stage}-AppSyncServiceRole"
         AssumeRolePolicyDocument:
           Version: "2012-10-17"
           Statement:

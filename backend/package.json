@@ -6,14 +6,14 @@
   "scripts": {
     "create:develop": "$(npm bin)/sls deploy-appsync -s develop",
     "create:master": "$(npm bin)/sls deploy-appsync -s master",
-    "deploy:develop": "$(npm bin)/sls deploy -s develop",
-    "deploy:master": "$(npm bin)/sls deploy -s master",
     "update:develop": "$(npm bin)/sls update-appsync -s develop",
-    "update:master": "$(npm bin)/sls update-appsync -s master"
+    "update:master": "$(npm bin)/sls update-appsync -s master",
+    "deploy:develop": "$(npm bin)/sls deploy -s develop",
+    "deploy:master": "$(npm bin)/sls deploy -s master"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Kousuke Takeuchi <u651601f@gmail.com>",
+  "license": "GPL",
   "dependencies": {
     "aws-sdk": "^2.231.1",
     "babel-polyfill": "^6.26.0",
