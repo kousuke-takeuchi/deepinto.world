@@ -10,9 +10,9 @@
     "update:master": "$(npm bin)/sls update-appsync -s master",
     "deploy:develop": "$(npm bin)/sls deploy -s develop",
     "deploy:master": "$(npm bin)/sls deploy -s master",
-    "test": "$(npm bin)/jest --config jest.config.json --coverage",
-    "precommit": "$(npm bin)/sls webpack"
+    "test": "$(npm bin)/jest --config jest.config.json --coverage"
   },
+  "pre-commit": "$(npm bin)/sls webpack",
   "keywords": [
     "serverless",
     "serverless-blog",
