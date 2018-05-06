@@ -41,6 +41,7 @@
     "imports-loader": "^0.7.1",
     "jest": "^22.4.3",
     "jest-cli": "^22.4.3",
+    "pre-commit": "^1.2.2",
     "serverless": "^1.27.0",
     "serverless-appsync-plugin": "^0.0.5",
     "serverless-webpack": "^4.1.0",
