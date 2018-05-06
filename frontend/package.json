@@ -8,7 +8,8 @@
     "build": "NODE_ENV=master $(npm bin)/webpack"
   },
   "author": "Kousuke Takeuchi <u651601f@gmail.com>",
-  "license": "GPL",
+  "keywords": ["serverless", "serverless-blog", "graphql", "react", "markdown"],
+  "license": "GPL-3.0",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",

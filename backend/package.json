@@ -9,26 +9,38 @@
     "update:develop": "$(npm bin)/sls update-appsync -s develop",
     "update:master": "$(npm bin)/sls update-appsync -s master",
     "deploy:develop": "$(npm bin)/sls deploy -s develop",
-    "deploy:master": "$(npm bin)/sls deploy -s master"
+    "deploy:master": "$(npm bin)/sls deploy -s master",
+    "test": "$(npm bin)/jest --config jest.config.json --coverage",
+    "precommit": "$(npm bin)/sls webpack"
   },
-  "keywords": [],
+  "keywords": [
+    "serverless",
+    "serverless-blog",
+    "graphql",
+    "appsync"
+  ],
   "author": "Kousuke Takeuchi <u651601f@gmail.com>",
-  "license": "GPL",
+  "license": "GPL-3.0",
   "dependencies": {
     "aws-sdk": "^2.231.1",
     "babel-polyfill": "^6.26.0",
     "bluebird": "^3.5.1",
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.10",
+    "moment": "^2.22.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
     "babel-loader": "^7.1.2",
     "babel-preset-stage-2": "^6.24.1",
     "body-parser": "^1.15.2",
     "cors": "2.8.4",
     "env-cmd": "^5.0.0",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^2.0.0",
     "imports-loader": "^0.7.1",
-    "jest": "^21.2.1",
+    "jest": "^22.4.3",
+    "jest-cli": "^22.4.3",
     "serverless": "^1.27.0",
     "serverless-appsync-plugin": "^0.0.5",
     "serverless-webpack": "^4.1.0",

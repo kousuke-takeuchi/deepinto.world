@@ -11,12 +11,8 @@ module.exports = {
       {
         test: /\.js$/,
         use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: ['stage-2'],
-            },
-          },
+          "babel-loader",
+          "eslint-loader"
         ],
       },
     ],
