@@ -7,7 +7,7 @@ const SRC_DIR = 'src';
 const DEST_DIR = 'dist';
 
 const rimraf = require('rimraf');
-rimraf.sync(path.join(DEST_DIR, '**/*'));
+// rimraf.sync(path.join(DEST_DIR, '**/*'));
 
 const env = process.env.NODE_ENV || 'develop';
 const dev = !(env === 'master');

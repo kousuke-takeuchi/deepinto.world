@@ -15,7 +15,7 @@ export default class Introduction extends React.Component {
         <Title>Kousuke Takeuchi (竹内 宏佑)</Title>
         <Row>
           <Column c4>
-            <img className={Styles.img} src="https://lh3.googleusercontent.com/-08wBXVp3LhguJL28FDmn_89VX98lBTDMr8AOrL6NlF9z5JkGyl0_xbbw_ntyrslH1jZUhYXdMEYdKPTeeihsZqxrXh9R9fJxEQT-_1Rmdqb0yDewluilAGsFQwBoKip661NCNcJIZ4ke9hzdo_eUaZAqvBdnpXAplvNtUNjpxUdDXs2gfAfHTDtVthvQliKyqANQgb5efPKILppFJMnCtrPsPCjQFOuddaUQve7YaLBfERlXwH5myicPGW3QfqS3-Qc0-mEmSvFoHJMwyU1c5bQTj6BeF1IXd6jPAGqexvj2We7t31-B6DbrdxVxql-RQ-5pVS_th52gYBOKRg1_p-LJrRYDUN5KrjbkGNND7mb0X8Rm6sja7oGKw1dN_ntHhYI93BTEWhKNoa-UDwjLf0ofFihEG-dSQACtBGF-892SH6FiSONA0JP3CHp91Oo9bT1Fm9_C59LyoaDd4FYO9zZpiFNDKY4bNFKRhOWeoQ9kwTiAtJLwVbuzmFcENfyvuiWQYx_Z7zsIPWQ90stbEt9WcjMPpmiavJo4OmJ-qqfBWT6u_fGcZsPossUWu90T8ZjZHWsfNNFtosXf80n-oNfDjNM41lusDS943M=w1568-h1044-no" />
+            <img className={Styles.img} src="https://photos-2.dropbox.com/t/2/AAA4nQKlZy2tHdqqqHMqr0YdC7tKh7D3Wl8ntKroFZq1DQ/12/39427047/jpeg/32x32/3/1526040000/0/2/7651002384_IMG_0014.JPG/EJ70iB4YipgFIAIoAg/vfSsOOJf0C3INd0nEZGI8kDmmdmIorhOaOCGYoJI1bA%2CCXAjn5YU8B2smwZXVXaR-uWoBaL0YEjsXF2arc4Gzbk?dl=0&size=2048x1536&size_mode=3" />
           </Column>
           <Column c8>
             <Text>登山/水泳が好きです</Text>
