@@ -32,8 +32,10 @@ module.exports = {
   mode: dev ? 'development' : 'production',
   devServer: {
     contentBase: DEST_DIR,
+    host: '0.0.0.0',
     port: 3000,
-    inline: true
+    inline: true,
+    disableHostCheck: true
   },
   module: {
     rules: [
