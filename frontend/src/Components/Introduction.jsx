@@ -15,7 +15,7 @@ export default class Introduction extends React.Component {
         <Title>Kousuke Takeuchi (竹内 宏佑)</Title>
         <Row>
           <Column c4>
-            <img className={Styles.img} src="https://photos-2.dropbox.com/t/2/AAA4nQKlZy2tHdqqqHMqr0YdC7tKh7D3Wl8ntKroFZq1DQ/12/39427047/jpeg/32x32/3/1526040000/0/2/7651002384_IMG_0014.JPG/EJ70iB4YipgFIAIoAg/vfSsOOJf0C3INd0nEZGI8kDmmdmIorhOaOCGYoJI1bA%2CCXAjn5YU8B2smwZXVXaR-uWoBaL0YEjsXF2arc4Gzbk?dl=0&size=2048x1536&size_mode=3" />
+            <img className={Styles.img} src={require('assets/profile.png')} />
           </Column>
           <Column c8>
             <Text>登山/水泳が好きです</Text>
