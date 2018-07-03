@@ -1,8 +1,0 @@
-node_modules
-.serverless
-.webpack
-env/*
-!env/*.sample.json
-yarn.lock
-*.log
-coverage

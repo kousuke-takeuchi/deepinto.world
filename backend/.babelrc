@@ -1,8 +1,0 @@
-{
-  "presets": ["stage-2"],
-  "env": {
-    "test": {
-      "presets": ["stage-2"]
-    }
-  }
-}

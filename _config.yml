@@ -1,0 +1,19 @@
+title: Into Deep World
+your_name: Kousuke Takeuchi
+email: takeuchi@paso-group.com
+description: >- # this means to ignore newlines until "baseurl:"
+  some description
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "intodeep.world" # the base hostname & protocol for your site, e.g. http://example.com
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# plugins:
+#   - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
