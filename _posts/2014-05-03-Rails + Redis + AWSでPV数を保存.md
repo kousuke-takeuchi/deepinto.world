@@ -74,10 +74,10 @@ PostControllerのshowメソッドで、個別ページを表示するなら、�
 ```rb
 # controllers/posts_controller.rb
 def show
-	@post = Post.find(params[:id])
-	...
+ @post = Post.find(params[:id])
+ ...
 
-	REDIS.incr "posts/daily/#{Date.today.to_s}/#{@post.id}"
+ REDIS.incr "posts/daily/#{Date.today.to_s}/#{@post.id}"
 end
 ```
 
@@ -121,7 +121,7 @@ today = Date.today.to_s
 
 # 個別記事のPV数を取り出す
 @posts.each do |post|
-	@daily_pageviews[@post.id] = REDIS.get "posts/daily/#{today}/#{post.id}"
+ @daily_pageviews[@post.id] = REDIS.get "posts/daily/#{today}/#{post.id}"
 end
 
 # PV数のソーティング
