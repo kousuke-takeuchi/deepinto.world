@@ -17,7 +17,7 @@
       <div class="cell -5of12">
         {% for post in site.posts %}
           <h2>
-            <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            <a href="{{ post.url }}">{{ post.title }}</a>
           </h2>
           <blockquote>
             By Kousuke Takeuchi on {{ post.date | date: '%d %B %Y' }} | <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.id}}">Comments (0)</a>
