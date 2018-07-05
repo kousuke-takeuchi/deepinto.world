@@ -21,7 +21,8 @@ RedisをAWSに追加して、インスタンスの詳細画面に移動してく
 
 RailsでRedisを使う際に、画面のPortとEndpointを使用するので、Railsの環境変数に追加しておきましょう。
 
-```rb:config/environments/production.rb
+```rb
+# config/environments/production.rb
 ENV["REDIS"] = "xxxx.xxxx.chache.amazonaws.com:6379" # Endpoint + Port
 ```
 
@@ -43,8 +44,9 @@ ENV["REDIS"] = "localhost:6379"
 ### RailsでRedisを使うための設定
 RailsでRedisを扱うためにgemを追加します
 
-```ruby:Gemfile
-	gem 'redis'
+```rb
+# Gemfile
+gem 'redis'
 ```
 
 ```sh
@@ -53,7 +55,8 @@ $ bundle install
 
 initializerフォルダに、Redisの初期設定を追加します。
 
-```ruby:config/initializers/redis.rb
+```rb
+# config/initializers/redis.rb
 require 'redis'
 
 uri = URI.parse(ENV["REDIS"])
