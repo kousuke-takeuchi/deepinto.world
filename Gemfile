@@ -13,6 +13,10 @@ gem "rouge"
 group :jekyll_plugins do
   gem "github-pages"
   gem "jekyll-admin"
+  gem "jekyll-feed"
+  gem "amp-jekyll"
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
