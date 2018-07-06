@@ -1,4 +1,4 @@
-title: Deep into world
+title: Deep into World
 your_name: Kousuke Takeuchi
 author: Kousuke Takeuchi
 email: takeuchi@paso-group.com
@@ -13,7 +13,8 @@ twitter:
   username: KousukeTakeuchi
   card: summary
 # logo
-# google_site_verification
+google_site_verification: tk8xSLFQzTDv5F7QBAWKR9Wzev8Zz9r4ubBSYtc9ffQ
+lang: ja_JP
 
 kramdown:
   input: GFM
