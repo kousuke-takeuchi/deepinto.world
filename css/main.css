@@ -1,4 +1,68 @@
-#main {
-  margin-left: 50px;
-  padding-top: 50px;
+/* 全体 */
+.main-container {
+  margin: 0 5%;
+}
+
+/* タイトル */
+.hack header h1 {
+  font-size: 1.5em;
+}
+
+.hack header a {
+  color: black;
+  border-bottom: none;
+}
+
+.hack header a:hover {
+  color: black;
+  background-color: white;
+}
+
+.hack header hr.title:after {
+  content: '-----------------------------------------------------------------------------------------------------------------------------------------------';
+}
+
+/* 記事 */
+img {
+  width: 95%;
+}
+
+.main-content .post {
+  margin: 50px 0;
+}
+
+/* サイドナビゲーション */
+@media screen and ( max-width: 479px ) {
+  nav {
+    display: none;
+  }
+}
+
+img#profile {
+  width: 150px;
+  height: 150px;
+}
+
+
+/* PC画面 */
+@media screen and ( min-width: 480px ) {
+  .main-container {
+    margin: 0 15%;
+  }
+
+  .row .column {
+    width: 100%;
+  }
+
+  .row .column.main-content {
+    float: left;
+    width: 70%;
+  }
+
+  .row nav.column {
+    overflow: hidden;
+    width: auto;
+    padding-top: 100px;
+    padding-left: 30px;
+  }
 }
